@@ -17,7 +17,7 @@ isPalindrome = (number) => {
 
 generateMax3Palindrome = () => {
   let largestpalindrome = 0;
-  for (let i = 990; i > 99; i -= 11) {
+  for (let i = 999; i > 99; i--) {
     for (j = 999; j > 99; j--) {
       let productValue = i * j;
       if (largestpalindrome < productValue && isPalindrome(productValue)) {
